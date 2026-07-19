@@ -319,3 +319,27 @@ footer{
     font-size: 40px;
     font-weight: bold;
 }
+@media print {
+
+    body * {
+        visibility: hidden;
+    }
+
+    #resumeOutput,
+    #resumeOutput * {
+        visibility: visible;
+    }
+
+    #resumeOutput {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        background: white;
+    }
+
+    .primary-btn {
+        display: none;
+    }
+
+}
