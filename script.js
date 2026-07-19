@@ -44,8 +44,8 @@ function generateResume() {
             <h3>Languages</h3>
             <p>${languages}</p>
 
-            <button onclick="window.print()" class="primary-btn">
-                Download PDF
+            <button onclick="downloadPDF()" class="primary-btn">
+             Download PDF
             </button>
         </div>
     `;
