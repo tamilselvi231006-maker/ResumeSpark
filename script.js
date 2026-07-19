@@ -16,11 +16,12 @@ function generateResume() {
     let languages = document.getElementById("languages").value;
 
     document.getElementById("resumeOutput").innerHTML = `
-        <div style="border:2px solid #333; padding:20px; margin-top:30px; background:#fff;">
-            <h1>${fullName}</h1>
-            <p><b>Email:</b> ${email}</p>
-            <p><b>Phone:</b> ${phone}</p>
-            <p><b>Address:</b> ${address}</p>
+        <div style="border:2px solid #333; padding:40px; margin:30px auto; background:#fff; width:800px; line-height:1.8; font-family:Arial,sans-serif;">
+            <h1 style="text-align:center; margin-bottom:25px;">${fullName}</h1>
+            <p style="margin-bottom:10px;"><b>Email:</b> ${email}</p>
+            <p style="margin-bottom:10px;"><b>Phone:</b> ${phone}</p>
+            <p style="margin-bottom:20px;"><b>Address:</b> ${address}</p>
+
 
             <h3>Career Objective</h3>
             <p>${objective}</p>
