@@ -45,28 +45,10 @@ function generateResume() {
             <h3>Languages</h3>
             <p>${languages}</p>
 
-            <button type="button" class="primary-btn" onclick="downloadPDF()">
-            Download PDF
-            </button>
         </div>
     `;
 }
-function downloadPDF() {
-     alert("PDF button clicked");
 
-   const element = document.getElementById("resumeContent"); 
-
-    const options = {
-        margin: 0.5,
-        filename: "Resume.pdf",
-        image: { type: "jpeg", quality: 1 },
-        html2canvas: { scale: 2 },
-        jsPDF: {
-            unit: "in",
-            format: "a4",
-            orientation: "portrait"
-        }
-    };
 
     html2pdf().set(options).from(element).save();
 
